@@ -1,4 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files margin-top: 74px; */
 
+@font-face {
+    font-family: "cocogoose";
+    src: local("cocogoose"), url(./assets/fonts/cocogoose.ttf) format("truetype");
+}
+
+/* General */
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main { padding: 10px; box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.2) }
+
+/* Navigation Bar */
+.mat-toolbar { background-color: white; }
+.mat-toolbar-row, .mat-toolbar-single-row { height: auto; padding: 12px 16px !important; text-align: center !important; }
+.mat-toolbar .mat-menu-trigger { border-bottom: 1px solid black; }
+.example-spacer { flex: 1 1 auto; }
+.hamburger { font-size: 200%; height: auto !important; width: auto !important; }
+
+/* Section Styles */
+:is(h1, h2, h3, h4, h5, h6) { font-family: "cocogoose", fantasy !important; }
+h1 { font-size: 36px !important; text-align: center; margin: 0px 0px 0px !important; }
+h2 { font-size: 24px !important; }
+h3 { font-size: 24px !important; background-color: black; color: white; width: 300px; border-radius: 2px; text-align: center; }
+h4 { font-size: 20px !important; }
+
+
