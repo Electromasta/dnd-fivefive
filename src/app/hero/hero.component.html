@@ -1,17 +1,50 @@
-<div>
-    <h2>Section Header One</h2>
+<div class="content" [hidden]="isHidden('landinghook')">
+    <div *ngFor="let nav of navItems">
+        <h2>{{nav.name}}</h2>
+        <div fxLayout="row wrap">
+            <mat-card class="card" fxLayout="column" fxLayoutAlign="space-around center" *ngFor="let value of nav.values" (click)="onNavClick(nav.name, value)">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">{{value.symbol}}</mat-icon>
+                <h4>{{value.text}}</h4>
+            </mat-card>
+        </div>
+    </div>
+    <p>The land was wild, but its virtues ravaged by evil</p>
+    <p>Not heros, but children, were sent into the crypts and mires of that forgotten place</p>
+    <p>It had a deep, quiet sadness of an age long past,</p>
+    <p>A place that even if you stood where They had once stood, it would never be the same again</p>
+    <p>It was then we realized that even our small dreams would one day cast shadows</p>
+</div>
 
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+<div class="content" [hidden]="isHidden(bookmark.name)">
+    <div *ngFor="let page of pages">
+        <h2>{{page.title}}</h2>
+        <p>
+            <span *ngFor="let piece of page.text">
+                <span *ngIf="piece.type==='p'">{{piece.data}}</span>
+                <span *ngIf="piece.type!=='p'" class="tooltip" (mouseover)="hover($event)" (mouseout)="unhover()">{{piece.data}}</span>
+            </span>
+        </p>
 
-    <h2>Section Header One</h2>
+        <table *ngIf="page.tablename.length>0">
+            <tr>
+                <th *ngFor="let col of tables[page.tablename].columns">{{col}}</th>
+            </tr>
+            <tr *ngFor="let row of tables[page.tablename].cells; let i = index">
+                <td>{{tables[page.tablename].rows[i]}}</td>
+                <td *ngFor="let cel of row">{{cel}}</td>
+            </tr>
+        </table>
 
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+</div>
 
-    <h3>Section Header Two</h3>
+<div class="content" [hidden]="isHidden('encounterhook')">
+    <h2>Swarm of Rats</h2>
+    <p>Swarm: The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain Hit Points or gain Temporary Hit Points.</p>
+</div>
 
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-    <h3>Section Header Two</h3>
-
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+<div class="popover" [style.top]="popover.top" [style.right]="popover.right" *ngIf="popover.show">
+    <mat-card>
+        <p>{{dictionary[popover.poptext]}}</p>
+    </mat-card>
 </div>

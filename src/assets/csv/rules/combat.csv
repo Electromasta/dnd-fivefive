@@ -1,0 +1,14 @@
+Title,Text
+Surprise,Creatures that use aggressive actions towards surprised creatures have advantage.
+Initiative,"Each round, characters declare their actions and roll tests vs a DC.  Turns get resolved in the order of the highest scored action. "
+Reactions,"In combat, characters get one reaction, a special action that can be used on an opponent's turn."
+Opportunity Attack     ,"When an opponent leaves your reach, you may make an opportunity attack against them using your reaction."
+Parry     ,"By using the dodge reaction, you can roll Dodge Saving throw vs the each attack against you this round."
+Attacking and Defending,"As an action, the player can make an attribute test, if it is equal or greater to the target's Defense DC, the player can roll damage.  When a player character is on the receiving end of an attack, they roll defense vs the monsters Attack DC, avoiding the damage if they succeed.  If an attack roll is 10 higher or a defense roll is 10 lower all damage dice are rolled twice."
+"Dash, Disengage, Help, Hide, Ready, Search, Use, Ranged Combat, Grapplying, Shoving","For playtest brevity, this works like 5e."
+Flanking and Cover,"A creature with obstacles between them and the attacker has cover, while a creature that is flanked (in combat with two creatures on opposite sides) is exposed.  A creature is overwhelmed when it is being attacked by 5 or more creatures in melee."
+Two Weapon Fighting,"When making the parry reaction, you gain a +1 to the attack.  Additionally, on your turn you can use a special reaction to make a single attack with your offhand weapon."
+Armor,"Armor a character wears gives the character Armor Dice, which are D6.  If a character fails to defend, they can put one dice to the side and declare it broken to negate all the damage of an attack, and ignore its effects.   During a short rest, characters can perform makeshift repairs by rolling their broken armor dice, on a 2 or lower, that dice is broken permanently until repaired at a smithy, otherwise it is no longer broken.
+
+A character who is not proficient in armor subtracts their armor dice total from all rolls.
+"

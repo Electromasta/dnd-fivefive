@@ -1,0 +1,25 @@
+Title,Text
+.,"The goal of this travel system is to provide an interactive framework for travel that rewards preparation, inspired by works such as Oregon Trail and Ryuutama.  "
+.,"This system abstracts the travel into several journey checks.  These checks simulate the adventuring day, and the non combat loss of resources from the struggles of navigating the wilderness.  One could make a rotation of Journey checks for every day of travel, and certainly this should be left up to each table, but for brevity my recommendation is 3 total cycles for a short to medium journey, and 5 cycles of checks for a long or arduous journey.  
+"
+.,"In any system there must be rewards and consequences, but the players must also arrive at their destination for the plot to move forward.  Consequences can be time, resources, or random encounters.  Time consequences must be left up to narrative devices each dm makes, but generally a failure uses up hit dice or raises alert level.  If the alert level is raised to three, the players trigger a random encounter, which can occur while traveling, camping, or sleeping. 
+"
+.,"At the beginning of the journey, have the players self organize, designating someone as the navigator, camp organizer, and cook.  Note that hunting is something that can take from 3 to 6 hours or even an entire day.  Needless to say, to hunt and forage for extra food takes an extra day of travel, and requires a survival check equal to the Terrain DC.
+"
+.,"At the start of the day (if camping in an uncomfortable spot), have all the players make a Condition Check.  This accounts for how well the players slept.  They may feel stiff or come down with a mild cold, or they may wake up feeling fresh and ready to conquer the day."
+.,"The Navigation Check is made by the navigator.  Using landmarks, a compass, intuition, and an understanding of nature, this job is vital not only in finding the path, but also finding secrets and avoiding pitfalls, sometimes literally.  Prepare set pieces ahead of time for critical success or failure.
+"
+.,"Depending on the result of Navigation, the players make a Travel Check.  This tracks how well each character endures the rigor of the day.  Describe the difficulty traveling through the terrain, and the success of characters to push through difficulties, even if they lose hit dice.  
+"
+.,"Cooking Check and Camping Check may be done simultaneously by anyone who isn’t the navigator.  The camping check incorporates setting up camp, securing it and hiding it, and directly influences the recovery options characters have while traveling.  The cooking check is a support role, but also the most impactful role.  (See cooking section for more details)
+"
+.,"Finally, the Lookout Check.  For every character in the party to get enough sleep, at least 3 watches must be taken.  As long as only light activity occurs during watch, characters may still consider that time as towards a rest.  
+"
+.,"In the tables listed below, different outcomes are present.  Success and Failure work by beating or failing to beat a DC, Critical is 10 greater than the DC, Fumble is 10 lower than the DC.  Characters may aid another during a Navigation, Camping, or Cooking check, but then may not participate in the other two checks.  One final note, If a character has no hit dice left when they would lose a hit dice from failure, they instead gain exhaustion.
+"
+Condition Check,"Constitution Save vs DC equal to Body Armors base AC, or 10 if not wearing armor."
+Navigation Check ,Survival or Perception Check vs Terrain DC
+Travel Check,Athletics or Acrobatics Check vs Terrain DC
+Camping Check ,"Survival, Investigation, or Sleight of Hand check vs Terrain DC"
+Cooking Check,See below Table.  Effect Applies to Camping and Condition the next day
+Lookout Check,Perception vs Terrain DC
