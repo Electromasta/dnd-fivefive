@@ -1,33 +1,42 @@
 <div fxLayoutAlign="center center">
     <div fxFlex="0 1 1200px" fxFlex.md="0 1 92%" fxFlex.sm="0 1 94%" fxFlex.xs="0 1 96%" fxFlexOffset.md="4%" fxFlexOffset.sm="3%" fxFlexOffset.xs="2%"  class="main">
 
-        <div>
-            <mat-icon mat-button [matMenuTriggerFor]="menu" class="hamburger" fxShow="false" fxHide.sm="false" fxHide.xs="false">menu</mat-icon>
-            <mat-menu #menu="matMenu">
-                <div *ngFor="let navItem of navItems"> 
-                    <button mat-menu-item [matMenuTriggerFor]="menu2" >{{ navItem.name }}</button>
-                    <mat-menu #menu2="matMenu" >
-                        <button mat-menu-item *ngFor="let value of navItem.values">{{value}}</button>
-                    </mat-menu>
-                </div>
-            </mat-menu>
-
-            <div>
-
-            </div>
-
-            <h1 fxFlex="0 1 100%" fxFlex.sm="0 1 95%" fxFlex.xs="0 1 95%" >Fifth Hack</h1>
-        </div>
+        <hr>
 
         <mat-toolbar>
-            <div fxFlex="0 1 100%" fxShow="true" fxHide.sm="true" fxHide.xs="true" *ngFor="let navItem of navItems">
+            <h1 [hidden]="isLanding()" fxShow="true" fxHide.sm="true" fxHide.xs="true" class="title" fxFlex="0 1 100%" fxFlex.sm="0 1 95%" fxFlex.xs="0 1 95%" (click)="onNavClick('Landing', {text: 'Fifth Hack', symbol: 'iron'})">Fifth Hack</h1>
+            <div [hidden]="isLanding()" fxFlex="0 1 100%" fxShow="true" fxHide.sm="true" fxHide.xs="true" *ngFor="let navItem of navItems">
                 <span mat-button [matMenuTriggerFor]="menu">{{ navItem.name }}</span>
                 <mat-menu #menu="matMenu">
-                    <button mat-menu-item *ngFor="let value of navItem.values">{{value}}</button>
+                    <button mat-menu-item *ngFor="let value of navItem.values" (click)="onNavClick(navItem.name, value)">{{value.text}}</button>
                 </mat-menu>
                 <span class="example-spacer"></span>
             </div>
         </mat-toolbar>
+
+        <hr fxShow="true" fxHide.sm="true" fxHide.xs="true" [hidden]="isLanding()">
+
+        <div>
+            <mat-toolbar>
+                <span [hidden]="isLanding()">
+                    <mat-icon mat-button [matMenuTriggerFor]="menu" class="hamburger" fxShow="false" fxHide.sm="false" fxHide.xs="false">menu</mat-icon>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item (click)="onNavClick('Landing', {text: 'Fifth Hack', symbol: 'iron'})">Fifth Hack</button>
+                        <div *ngFor="let navItem of navItems"> 
+                            <button mat-menu-item [matMenuTriggerFor]="menu2" >{{ navItem.name }}</button>
+                            <mat-menu #menu2="matMenu" >
+                                <button mat-menu-item *ngFor="let value of navItem.values" (click)="onNavClick(navItem.name, value)">{{value.text}}</button>
+                            </mat-menu>
+                        </div>
+                    </mat-menu>
+                </span>
+                <span fxShow="false" fxHide.sm="false" fxHide.xs="false" class="example-spacer"></span>
+                <h1 class="title" fxFlex="0 1 100%">{{bookmark.value.text}}</h1>
+            </mat-toolbar>
+        </div>
+
+        <hr fxShow="false" fxHide.sm="false" fxHide.xs="false" [hidden]="isLanding()">
+        <hr [hidden]="!isLanding()">
 
         <router-outlet (activate)="changeOfRoutes()"></router-outlet>
     </div>

@@ -1,0 +1,10 @@
+Title,Text,Table
+.,"Each creature has six ability scores that measure their physical and mental characteristics.  When making a check, attacking, defending, or saving, they test the ability score that most closely matches the task at hand.  The normal human average for a score is 10, although individuals vary wildly.  Some game mechanics require an Ability Bonus instead of score.  To determine this, subtract 10 from the score and divide the resulting number by 2, rounded down.","#scores"
+Strength,"Strength measures muscle, athletic training, and raw physical force.  You can carry 5 + total Strength Score of Bulk.  You add your strength bonus to melee and thrown weapon damage.",
+Dexterity,"Dexterity measures fine motor skills, agility, and balance.  The difficulty class to hit you when dodging is equal to your dexterity bonus.  You add your dexterity bonus to finesse and range weapon damage.",
+Constitution,"Constitution measures health, stamina and vital force.  When rolling hit dice, the minimum roll is equal to your constitution bonus.",
+Intelligence,"Intelligence measures sharp wits, memory, and ability to learn.  Characters have a number of bonus Lore Feats equal to their intelligence bonus.",
+Wisdom,"Wisdom measures perception, intuition, and willpower.  Characters add their wisdom bonus to all healing miracles.",
+Charisma,"Charisma measures confidence, charm, and influence over others.  Characters add their charisma bonus to spells that deal damage.",
+Basic Training,"In addition to the generalized aspects above, characters are assumed to have a baseline of training that might be considered specialized in modern day.  Lighting a fire, tying basic knots, and basic horse riding are assumed to be trivial tasks.",
+Special Training,"Some actions aren’t covered by an ability score, and require special training.  These include but are not limited to:  Esoteric Lore, Lock Picking, Disabling Traps, Performing on an Instrument, Speaking Fluently in a Foreign Language, ect.   ",

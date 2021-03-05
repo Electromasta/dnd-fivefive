@@ -1,0 +1,10 @@
+Title,Text,Table
+Rolling Attributes,"The players roll a pool of dice six times and record their results.  Assign them each to an attribute.  There are three different suggested pools, depending on the tone of the game.  Dreams and Shadows is the default method.",#rolling
+Starting Gifts,You can start with an item or special trait.  You get a number of boon points depending on the total ability scores rolled.,#boon
+Common Gear - 1 Point,"Pick items from the Common Gear table up to 25 Silver Coins.  Some examples include: A Crowbar, Mead, Spices, Caltrops or a Lamp.",
+Uncommon Gear - 2 Points,"Pick items from the Uncommon Gear table up to 50 Silver Coins.  Some examples include: A Woolen Hat, Turban, Hiking Staff, Candle-Lamp, Bell, or Steel Mirror.",
+Holy Water - 2 Points,You gain a bag containing flasks of Holy Water (Ud4),
+Healing Potion - 3 Points,You gain a Healing Potion. (Ud4),
+Alchemist Fire - 3 Points,You gain a bandoleer containing flasks of Alchemist Fire (Ud4),
+Master Key - 4 Points,You gain a key that can open any lock DC 3 and under.  It has Ud4 uses before it is broken forever.,
+Animal Companion - 5 Points,"You gain an animal companion like the Find Familiar spell, but it also knows speech.  This companion believes its purpose is to protect you at any cost, and can use the help action on its turn.",
